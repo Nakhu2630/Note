@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<head>
+    <link rel="stylesheet" href="style1.css">
+    <title>TOP secret</title>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Are You Ano's Cool Friend?</h2>
+        <form id="loginForm">
+            <label for="password">Prove It Then!</label>
+            <input type="password" id="password" name="password" required>
+            <button type="submit">yeah  </button>
+        </form>
+        <p id="error-message" class="hidden">So You Want To Scam Me-?</p>
+    </div>
+
+    <script>
+        document.getElementById('loginForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const password = document.getElementById('password').value;
+            const correctPassword = "Furina"; 
+
+            if (password === correctPassword) {
+                window.location.href = "true.html"; 
+            } else {
+                document.getElementById('error-message').classList.remove('hidden');
+            }
+        });
+    </script>
+</body>
+</html>

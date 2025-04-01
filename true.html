@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Note For You</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1><center>I Made This Only For You, I Hope You Like it!</center></h1>
+
+
+    <div class="envelope-wrapper">
+        <div id="envelope" class="close">
+            <div class="front flap"></div>
+            <div class="front pocket"></div>
+            <div class="letter">
+                <div class="words line1">Hello</div>
+                <div class="words line2">Im sorry for the late respond</div>
+                <div class="words line3">Are you alright? Please tell me if i did anything wrong to you, I want to fix what i did!! I will listen so it's fine if you want to tell me anything wrong u feel!!</div>
+            </div>
+            <div class="sparkles">
+                <div class="sparkle a1"></div>
+                <div class="sparkle a2"></div>
+                <div class="sparkle a3"></div>
+            </div>
+        </div>
+        <div class="overlay"></div>
+    </div>
+    <div class="reset">
+        <button id="open">Open</button>
+        <button id="reset">Close</button>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+    
+    <audio autoplay loop>
+        <source src = "Pasilyo.mp3" type="audio/mp3"/>
+    </audio>
+    <script>
+        document.getElementById("bg-music").volume = 0.5;
+    </script>
+    
+    
+</body>
+</html>
